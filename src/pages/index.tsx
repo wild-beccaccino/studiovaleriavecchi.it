@@ -29,20 +29,29 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-        <div className={`${styles.wrapper} ${montserrat}`}>
+        <div className={styles.wrapper}>
           <main className={styles.main}>
+            <div className={styles.imgContainer}>
+              <Image src="/logo-big.png" width={536} height={230} layout="responsive" alt="logo studio valeria vecchi" />
+            </div>
             <div className={styles.logo}>
-              <Image src="/logo-big.png" width={536} height={230} alt="logo studio valeria vecchi" />
-              <div className={styles.divider}></div>
-              <h3 className={styles.coomingSoon}>cooming soon</h3>
-              <div className={styles.linkContainer}>
-                <a className={styles.linkButton} href="mailto:info@studiovaleriavecchi.it">contattaci</a>
+              <div className={styles.centralItems}>
+                <h3 className={styles.comingSoon}>coming soon</h3>
+                <div className={styles.buttonContainer}>
+                  <a className={styles.linkButton} href="mailto:info@studiovaleriavecchi.it">contattaci</a>
+                </div>
               </div>
             </div>
           </main>
           <footer className={styles.footer}>
-            <p>p.iva  01427570195 - via cesare battisti 2 - 26030 gadesco pieve delmona (cr) loc. san marino</p><p>
+            <p>P.IVA  01427570195 - Via Cesare Battisti 2 - 26030 Gadesco Pieve Delmona (Cr) Loc. San Marino</p><p>
             tel. 0372 708900 - 334 6279392 - <a href="mailto:info@studiovaleriavecchi.it">info@studiovaleriavecchi.it</a>
+            </p>
+          </footer>
+          <footer className={styles.footerMobile}>
+            <p>
+              P.IVA  01427570195 </p><p> Via Cesare Battisti 2 26030 </p><p>  Gadesco Pieve Delmona (Cr) </p><p>  Loc. San Marino </p><p>
+            tel. 0372 708900 334 6279392  <a href="mailto:info@studiovaleriavecchi.it">info@studiovaleriavecchi.it</a>
             </p>
           </footer>
         </div>
